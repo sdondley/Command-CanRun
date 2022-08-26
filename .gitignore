@@ -1,0 +1,5 @@
+.precomp/
+/Command-CanRun-*
+*.iml
+*.idea
+

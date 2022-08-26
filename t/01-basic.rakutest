@@ -1,0 +1,6 @@
+use Test;
+use Command::CanRun;
+
+pass "replace me";
+
+done-testing;

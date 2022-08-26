@@ -1,0 +1,20 @@
+{
+   "description" : "blah blah blah",
+   "auth" : "zef:sdondley",
+   "perl" : "6.d",
+   "depends" : [],
+   "name" : "Command::CanRun",
+   "test-depends" : [],
+   "provides" : {
+      "Command::CanRun" : "lib/Command/CanRun.rakumod"
+   },
+   "license" : "Artistic-2.0",
+   "authors" : [
+      "Steve Dondley"
+   ],
+   "version" : "0.0.1",
+   "source-url" : "https://github.com/sdondley/Command-CanRun.git",
+   "tags" : [],
+   "resources" : [],
+   "build-depends" : []
+}
