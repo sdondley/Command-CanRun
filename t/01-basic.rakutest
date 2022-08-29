@@ -6,6 +6,17 @@ plan 3;
 use-ok 'Command::CanRun';
 ok determine-os, 'can determine os';
 
-is can-run('grep'), True, 'determines that command can be run';
+if !$*DISTRO.is-win {
+    is can-run('grep'), True, 'determines linux command can be run';
+} else {
+    skip 'Skipping command meant for linux', 1;
+}
+
+
+if $*DISTRO.is-win {
+    is can-run('dir'), True, 'determines windows command can be run';
+} else {
+    skip 'Skipping command meant for windows', 1;
+}
 
 done-testing;
