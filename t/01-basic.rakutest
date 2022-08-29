@@ -1,6 +1,11 @@
 use Test;
-use Command::CanRun;
+use Command::CanRun :internals;
 
-pass "replace me";
+plan 3;
+
+use-ok 'Command::CanRun';
+ok determine-os, 'can determine os';
+
+is can-run('grep'), True, 'determines that command can be run';
 
 done-testing;
